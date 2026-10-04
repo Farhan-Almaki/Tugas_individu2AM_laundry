@@ -50,8 +50,22 @@ Masalah perhitungan laundry dipecah menjadi fungsi-fungsi kecil:
 ### 7. Pattern Recognition
 
 Setiap transaksi laundry selalu mengikuti pola perhitungan berulang yang sama:
+
 ```text
-Input (kilo & tipe) ➔ Cek Berat Minimal (BR-01) ➔ Hitung Harga Dasar (BR-02) ➔ Cek Paket Express (BR-03) ➔ Hitung Total
+Input (kilo & tipe)
+        |
+        v
+Cek Berat Minimal (BR-01)
+        |
+        v
+Hitung Harga Dasar (BR-02)
+        |
+        v
+Cek Paket Express (BR-03)
+        |
+        v
+Hitung Total
+```
 
 **Rumus Perhitungan:**
 
@@ -66,6 +80,8 @@ Input (kilo & tipe) ➔ Cek Berat Minimal (BR-01) ➔ Hitung Harga Dasar (BR-02)
 | Harga Dasar            | 3.0 kg × Rp7.000    |     Rp21.000 |
 | Tambahan Express (50%) | Rp21.000 × 0.5      |     Rp10.500 |
 | **Total Biaya**        | Rp21.000 + Rp10.500 | **Rp31.500** |
+
+---
 
 ### 8. Abstraction
 
