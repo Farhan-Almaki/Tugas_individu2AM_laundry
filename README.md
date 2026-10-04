@@ -149,3 +149,34 @@ Cetak: total
    │
    ▼
  [END]
+```
+
+---
+
+### 11. Pseudocode
+
+```pascal
+PROCEDURE hitungBerat(kilo)
+    IF kilo < 2.0 THEN
+        RETURN 2.0
+    END IF
+    RETURN kilo
+END PROCEDURE
+
+PROCEDURE hitungHarga(kilo, tipe)
+    beratAkhir = hitungBerat(kilo)
+    total = beratAkhir * 7000
+    
+    CASE tipe OF
+        express:
+            RETURN total + (total * 0.5)
+        reguler:
+            RETURN total
+    END CASE
+END PROCEDURE
+
+PROCEDURE main()
+    DISPLAY hitungHarga(1.5, reguler)
+    DISPLAY hitungHarga(3.0, express)
+END PROCEDURE
+```
