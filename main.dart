@@ -23,5 +23,10 @@ double hitungHarga(double kilo, PaketLaundry tipe) {
 }
 
 void main() {
-
+  print('LAUNDRY: ');
+  print('Skenario 1 (1.5 kg, Reguler) : Rp${hitungHarga(1.5, PaketLaundry.reguler).toStringAsFixed(0)}');
+  print('Skenario 2 (2.0 kg, Reguler) : Rp${hitungHarga(2.0, PaketLaundry.reguler).toStringAsFixed(0)}');
+  print('Skenario 3 (3.0 kg, Express) : Rp${hitungHarga(3.0, PaketLaundry.express).toStringAsFixed(0)}');
+  print('Skenario 4 (1.0 kg, Express) : Rp${hitungHarga(1.0, PaketLaundry.express).toStringAsFixed(0)}');
+  print('Skenario 5 (5.0 kg, Reguler) : Rp${hitungHarga(5.0, PaketLaundry.reguler).toStringAsFixed(0)}');
 }
